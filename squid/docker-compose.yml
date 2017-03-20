@@ -10,7 +10,7 @@ services:
       - /opt/squid/data:/opt/squid
       - /opt/squid/squid.conf:/etc/squid/squid.conf
       - /opt/squid/log/:/var/log/squid
-      - /opt/cert/altus5.local.ca.pem:/etc/cert/ca.pem
-      - /opt/cert/altus5.local.ca-key.pem:/etc/cert/ca-key.pem
+      - /opt/certs/altus5.local.ca.pem:/etc/cert/ca.pem
+      - /opt/certs/altus5.local.ca-key.pem:/etc/cert/ca-key.pem
 
 
