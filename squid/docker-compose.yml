@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  proxy:
+    image: altus5/squid:0.5.0
+    ports:
+      - "3128:3128"
+      - "3129:3129"
+    volumes:
+      - /opt/squid/data:/opt/squid
+      - /opt/squid/squid.conf:/etc/squid/squid.conf
+      - /opt/squid/log/:/var/log/squid
+      - /opt/cert/altus5.local.ca.pem:/etc/cert/ca.pem
+      - /opt/cert/altus5.local.ca-key.pem:/etc/cert/ca-key.pem
+
+
